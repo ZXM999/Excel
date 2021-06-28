@@ -9,8 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping
 public class ExcelTest {
+
     @Autowired
     ExcelTestService excelTestService;
+
     @GetMapping("/test")
     public void test(){
         excelTestService.makeExcel();
@@ -19,4 +21,6 @@ public class ExcelTest {
     public String hello(){
         return "hello";
     }
+
+
 }
