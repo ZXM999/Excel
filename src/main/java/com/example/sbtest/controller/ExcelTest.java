@@ -15,4 +15,8 @@ public class ExcelTest {
     public void test(){
         excelTestService.makeExcel();
     }
+    @GetMapping("/hello")
+    public String hello(){
+        return "hello";
+    }
 }
